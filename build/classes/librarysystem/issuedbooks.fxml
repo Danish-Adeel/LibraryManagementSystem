@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="librarysystem.IssuedbooksController">
+   <children>
+      <TableView fx:id="tableview" prefHeight="403.0" prefWidth="634.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+            <TableColumn fx:id="idcol" prefWidth="59.333314299583435" text="ID" />
+            <TableColumn fx:id="bookidcol" minWidth="0.0" prefWidth="63.999996185302734" text="Book ID" />
+            <TableColumn fx:id="booknamecol" prefWidth="128.00006866455078" text="Book Name" />
+            <TableColumn fx:id="holdernamecol" prefWidth="111.33323669433594" text="Holder Name" />
+            <TableColumn fx:id="dateofissuecol" prefWidth="112.6666259765625" text="Date of issue" />
+            <TableColumn fx:id="dayscol" minWidth="0.0" prefWidth="74.00009155273438" text="Days" />
+            <TableColumn fx:id="finecol" prefWidth="84.00006103515625" text="Fine" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="rootpane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="librarysystem.MemberlistController">
+   <children>
+      <TableView fx:id="tableview" layoutX="20.0" layoutY="20.0" prefHeight="430.0" prefWidth="630.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="idcol" prefWidth="75.0" text="Memeber ID" />
+            <TableColumn fx:id="namecol" prefWidth="109.99999237060547" text="Member Name" />
+            <TableColumn fx:id="contactcol" prefWidth="89.33332824707031" text="Contact" />
+            <TableColumn fx:id="emailcol" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="vipcol" prefWidth="75.0" text="VIP Memeber" />
+            <TableColumn fx:id="debtcol" prefWidth="75.0" text="DEBT" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#refreshaction" text="Refresh" />
+                  <MenuItem mnemonicParsing="false" onAction="#deleteaction" text="Delete" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+   </children>
+</AnchorPane>
